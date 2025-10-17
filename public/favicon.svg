@@ -1,0 +1,16 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" fill="#001F3F"/>
+  <!-- Drone body -->
+  <ellipse cx="16" cy="16" rx="4" ry="2" fill="#3B82F6"/>
+  <!-- Drone arms -->
+  <rect x="8" y="15" width="16" height="2" fill="#3B82F6"/>
+  <rect x="15" y="8" width="2" height="16" fill="#3B82F6"/>
+  <!-- Propellers -->
+  <ellipse cx="8" cy="16" rx="3" ry="1" fill="#666" opacity="0.8"/>
+  <ellipse cx="24" cy="16" rx="3" ry="1" fill="#666" opacity="0.8"/>
+  <ellipse cx="16" cy="8" rx="1" ry="3" fill="#666" opacity="0.8"/>
+  <ellipse cx="16" cy="24" rx="1" ry="3" fill="#666" opacity="0.8"/>
+</svg>
+
+
+
