@@ -1,4 +1,4 @@
-// File: C:\Projects\holts-drones\app\layout.js
+// File: C:\Projects\holts-drones-clean\app\layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

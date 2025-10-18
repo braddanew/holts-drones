@@ -633,11 +633,11 @@ video {
 .h-\[500px\] {
   height: 500px;
 }
-.h-\[80vh\] {
-  height: 80vh;
-}
 .h-full {
   height: 100%;
+}
+.h-screen {
+  height: 100vh;
 }
 .w-2 {
   width: 0.5rem;
@@ -683,9 +683,6 @@ video {
 }
 .max-w-md {
   max-width: 28rem;
-}
-.max-w-xl {
-  max-width: 36rem;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -929,6 +926,9 @@ video {
 .to-black\/20 {
   --tw-gradient-to: rgb(0 0 0 / 0.2) var(--tw-gradient-to-position);
 }
+.to-black\/70 {
+  --tw-gradient-to: rgb(0 0 0 / 0.7) var(--tw-gradient-to-position);
+}
 .to-blue-500 {
   --tw-gradient-to: #3b82f6 var(--tw-gradient-to-position);
 }
@@ -993,6 +993,10 @@ video {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1004,6 +1008,10 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .py-6 {
   padding-top: 1.5rem;
@@ -1121,9 +1129,6 @@ video {
 }
 .opacity-20 {
   opacity: 0.2;
-}
-.opacity-70 {
-  opacity: 0.7;
 }
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
@@ -1373,6 +1378,16 @@ body {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 }
 
