@@ -39,7 +39,7 @@ export default function Hero() {
         className="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl drop-shadow-md px-4"
       >
         Professional aerial photography, inspections, and real estate visuals
-        across Fresno County.
+        across Central Valley.
       </motion.p>
 
       <motion.a
@@ -47,7 +47,7 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 4, duration: 1, ease: "easeOut" }}
-        className="px-8 py-4 bg-white text-blue-700 rounded-full font-semibold hover:bg-blue-100 transition-colors text-lg drop-shadow-lg hover:scale-105 transform transition-transform"
+        className="px-8 py-4 bg-gray-800 text-white rounded-full font-semibold hover:bg-gray-700 transition-colors text-lg drop-shadow-lg hover:scale-105 transform transition-transform"
       >
         Start Your Project
       </motion.a>

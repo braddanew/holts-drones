@@ -7,7 +7,7 @@ const Chatbot = () => {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: 'Hello! I\'m Holt\'s Drones Virtual Assistant. I can help answer questions about drone photography, aerial inspections, pricing, and our services in Fresno, CA. How can I assist you today?'
+      content: 'Hello! I\'m Holt\'s Drones Virtual Assistant. I can help answer questions about drone photography, aerial inspections, pricing, and our services in Central Valley, CA. How can I assist you today?'
     }
   ]);
   const [inputMessage, setInputMessage] = useState('');
@@ -69,7 +69,7 @@ const Chatbot = () => {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-50"
+          className="fixed bottom-6 right-6 bg-gray-800 hover:bg-gray-700 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-50"
           aria-label="Open chat"
         >
           <svg
@@ -93,10 +93,10 @@ const Chatbot = () => {
       {isOpen && (
         <div className="fixed bottom-6 right-6 w-96 h-[500px] bg-white rounded-lg shadow-2xl border border-gray-200 flex flex-col z-50">
           {/* Header */}
-          <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-4 rounded-t-lg flex justify-between items-center">
+          <div className="bg-gray-800 text-white p-4 rounded-t-lg flex justify-between items-center">
             <div>
               <h3 className="font-semibold text-lg">Holt's Drones Assistant</h3>
-              <p className="text-blue-100 text-sm">We're online now</p>
+              <p className="text-gray-200 text-sm">We're online now</p>
             </div>
             <button
               onClick={() => setIsOpen(false)}
@@ -119,7 +119,7 @@ const Chatbot = () => {
                 <div
                   className={`max-w-[80%] p-3 rounded-lg ${
                     message.role === 'user'
-                      ? 'bg-blue-600 text-white'
+                      ? 'bg-gray-800 text-white'
                       : 'bg-gray-100 text-gray-800'
                   }`}
                 >
@@ -150,13 +150,13 @@ const Chatbot = () => {
                 onChange={(e) => setInputMessage(e.target.value)}
                 onKeyPress={handleKeyPress}
                 placeholder="Ask me about Holt's Drones…"
-                className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent text-sm"
                 disabled={isLoading}
               />
               <button
                 onClick={handleSendMessage}
                 disabled={!inputMessage.trim() || isLoading}
-                className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 text-white px-4 py-2 rounded-lg transition-colors text-sm font-medium"
+                className="bg-gray-800 hover:bg-gray-700 disabled:bg-gray-300 text-white px-4 py-2 rounded-lg transition-colors text-sm font-medium"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />

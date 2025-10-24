@@ -1,10 +1,105 @@
 [
-  { "title": "Commercial Roof Survey", "img": "/site-images/Roof Inspections.jpg" },
-  { "title": "Real Estate Showcase", "img": "/site-images/realestateinspection.jpg" },
-  { "title": "Agricultural Mapping", "img": "/site-images/agriculture field (1).jpg" },
-  { "title": "Construction Progress", "img": "/site-images/construction sites .jpg" },
-  { "title": "Wedding Event Coverage", "img": "/site-images/wedding party.jpg" },
-  { "title": "Suburban Neighborhood", "img": "/site-images/Drone Over Suburban Neighborhood.png" }
+  {
+    "title": "Commercial Roof Survey",
+    "img": "/site-images/Roof Inspections.jpg",
+    "category": "roof-inspection",
+    "media": [
+      "/site-images/Roof inspection/DJI_0010.JPG",
+      "/site-images/Roof inspection/DJI_0026.JPG",
+      "/site-images/Roof inspection/DJI_0032.JPG",
+      "/site-images/Roof inspection/DJI_0040.JPG",
+      "/site-images/Roof inspection/DJI_0065.JPG"
+    ]
+  },
+  {
+    "title": "Real Estate Showcase",
+    "img": "/site-images/realestateinspection.jpg",
+    "category": "real-estate",
+    "media": [
+      "/site-images/real-estate/DJI_0001.JPG",
+      "/site-images/real-estate/DJI_0002.JPG",
+      "/site-images/real-estate/DJI_0003.JPG",
+      "/site-images/real-estate/DJI_0004.JPG",
+      "/site-images/real-estate/DJI_0005.JPG",
+      "/site-images/real-estate/DJI_0006.JPG",
+      "/site-images/real-estate/DJI_0007.JPG",
+      "/site-images/real-estate/DJI_0008.JPG",
+      "/site-images/real-estate/DJI_0009.JPG",
+      "/site-images/real-estate/DJI_0010.JPG",
+      "/site-images/real-estate/DJI_0011.JPG",
+      "/site-images/real-estate/DJI_0012.JPG",
+      "/site-images/real-estate/DJI_0013.JPG",
+      "/site-images/real-estate/DJI_0014.JPG",
+      "/site-images/real-estate/DJI_0015.JPG",
+      "/site-images/real-estate/DJI_0016.JPG",
+      "/site-images/real-estate/DJI_0017.JPG",
+      "/site-images/real-estate/DJI_0018.JPG",
+      "/site-images/real-estate/DJI_0019.JPG",
+      "/site-images/real-estate/DJI_0021.JPG",
+      "/site-images/real-estate/DJI_0022.JPG",
+      "/site-images/real-estate/DJI_0023.JPG",
+      "/site-images/real-estate/DJI_0024.JPG",
+      "/site-images/real-estate/DJI_0025.MOV",
+      "/site-images/real-estate/DJI_0027.JPG",
+      "/site-images/real-estate/DJI_0028.JPG",
+      "/site-images/real-estate/DJI_0029.JPG",
+      "/site-images/real-estate/Copy of DJI_0029.JPG"
+    ]
+  },
+  {
+    "title": "Construction Progress",
+    "img": "/site-images/construction sites .jpg",
+    "category": "construction",
+    "media": [
+      "/site-images/Construction/DJI_0001.JPG",
+      "/site-images/Construction/DJI_0002.JPG",
+      "/site-images/Construction/DJI_0003.JPG",
+      "/site-images/Construction/DJI_0004.JPG",
+      "/site-images/Construction/DJI_0005.JPG",
+      "/site-images/Construction/DJI_0006.JPG",
+      "/site-images/Construction/DJI_0007.JPG",
+      "/site-images/Construction/DJI_0008.JPG",
+      "/site-images/Construction/DJI_0009.JPG",
+      "/site-images/Construction/DJI_0010.JPG",
+      "/site-images/Construction/DJI_0011.MOV",
+      "/site-images/Construction/DJI_0013.MOV",
+      "/site-images/Construction/DJI_0015.MOV",
+      "/site-images/Construction/DJI_0016.MOV"
+    ]
+  },
+  {
+    "title": "Agricultural Mapping",
+    "img": "/site-images/agriculture field (1).jpg",
+    "category": "agriculture",
+    "media": ["/site-images/agriculture field (1).jpg"]
+  },
+  {
+    "title": "Wedding Event Coverage",
+    "img": "/site-images/wedding party.jpg",
+    "category": "events",
+    "media": [
+      "/site-images/wedding party.jpg",
+      "/site-images/wedding party (2).jpg"
+    ]
+  },
+  {
+    "title": "Suburban Neighborhood",
+    "img": "/site-images/Drone Over Suburban Neighborhood.png",
+    "category": "general",
+    "media": [
+      "/site-images/Drone Over Suburban Neighborhood.png",
+      "/site-images/Drone Over Modern Commercial Building.png"
+    ]
+  },
+  {
+    "title": "Thermal Imaging",
+    "img": "/site-images/Thermal/ChatGPT Image Oct 24, 2025, 11_52_23 AM.png",
+    "category": "thermal",
+    "media": [
+      "/site-images/Thermal/ChatGPT Image Oct 24, 2025, 11_52_23 AM.png",
+      "/site-images/Thermal/Make thermal images of geographical formations.jpg"
+    ]
+  }
 ]
 
 

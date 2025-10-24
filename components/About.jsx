@@ -5,37 +5,36 @@ import Image from "next/image";
 export default function About() {
   const services = [
     {
-      icon: "🏠",
       title: "Real Estate Photography",
       description: "Stunning aerial shots that showcase properties from unique perspectives, helping realtors close deals faster.",
       image: "/site-images/realestateinspection.jpg"
     },
     {
-      icon: "🏗️",
       title: "Construction Progress",
       description: "Regular aerial monitoring of construction sites to track progress and identify potential issues early.",
       image: "/site-images/constructionsite2.jpg"
     },
     {
-      icon: "🌾",
       title: "Agricultural Mapping",
       description: "Precision crop monitoring, field analysis, and yield assessment using advanced drone technology.",
       image: "/site-images/agriculture field (1).jpg"
     },
     {
-      icon: "🔍",
       title: "Roof Inspections",
       description: "Safe, efficient roof surveys for insurance claims, maintenance planning, and damage assessment.",
       image: "/site-images/Roof Inspections (2).jpg"
     },
     {
-      icon: "💒",
       title: "Event Coverage",
       description: "Capture special moments from above - weddings, parties, and celebrations with unique aerial perspectives.",
       image: "/site-images/wedding party (2).jpg"
     },
     {
-      icon: "📊",
+      title: "Thermal Imaging",
+      description: "Advanced thermal detection for energy audits, leak detection, and environmental monitoring with precision temperature analysis.",
+      image: "/site-images/Thermal/ChatGPT Image Oct 24, 2025, 11_52_23 AM.png"
+    },
+    {
       title: "General Aerial Imaging",
       description: "High-precision aerial photography and videography for any property or location overview needs.",
       image: "/site-images/Drone Over Suburban Neighborhood.png"
@@ -44,8 +43,8 @@ export default function About() {
 
   const certifications = [
     { title: "FAA Part 107 Certified", description: "Licensed commercial drone pilot" },
-    { title: "Insured & Bonded", description: "Full liability coverage for all operations" },
-    { title: "5+ Years Experience", description: "Extensive aerial photography expertise" }
+    { title: "Insured & Bonded", description:  "$1 million liability coverage with more upon request" },
+    { title: "10+ Years Experience", description: "Extensive aerial photography expertise" }
   ];
 
   return (
@@ -67,7 +66,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             Why Choose{" "}
-            <span className="bg-gradient-to-r from-orange-500 via-teal-500 to-blue-500 bg-clip-text text-transparent">
+            <span className="text-gray-700">
               Holt's Drones?
             </span>
           </motion.h2>
@@ -78,7 +77,7 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            We're Fresno's premier FAA-certified aerial services provider, delivering 
+            We're Central Valley's premier FAA-certified aerial services provider, delivering 
             professional drone photography and videography with unmatched precision and reliability.
           </motion.p>
         </motion.div>
@@ -113,18 +112,11 @@ export default function About() {
               
               {/* Enhanced Content */}
               <div className="relative z-10 p-8 h-80 flex flex-col justify-end text-white">
-                <motion.div 
-                  className="text-5xl mb-4 drop-shadow-lg"
-                  whileHover={{ scale: 1.1, rotate: 5 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  {service.icon}
-                </motion.div>
                 <h3 className="text-2xl font-black mb-4 drop-shadow-lg">{service.title}</h3>
                 <p className="text-gray-200 leading-relaxed text-base font-medium drop-shadow-md">{service.description}</p>
                 
                 {/* Subtle bottom accent */}
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 via-teal-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gray-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
               </div>
               
               {/* 3D Shadow Effect */}
@@ -159,9 +151,9 @@ export default function About() {
               viewport={{ once: true }}
             >
               Professional{" "}
-              <span className="bg-gradient-to-r from-orange-400 to-teal-400 bg-clip-text text-transparent">
-                Excellence
-              </span>
+            <span className="text-gray-200">
+              Excellence
+            </span>
             </motion.h3>
             <motion.p 
               className="text-gray-200 text-xl md:text-2xl font-medium max-w-2xl mx-auto"
@@ -186,11 +178,11 @@ export default function About() {
                 whileHover={{ scale: 1.05 }}
               >
                 <motion.div 
-                  className="bg-gradient-to-br from-orange-500/20 to-teal-500/20 backdrop-blur-sm rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 shadow-lg border border-white/20 group-hover:shadow-2xl group-hover:shadow-orange-500/25 transition-all duration-500"
+                  className="bg-gray-600/20 backdrop-blur-sm rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 shadow-lg border border-white/20 group-hover:shadow-2xl transition-all duration-500"
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.6 }}
                 >
-                  <span className="text-3xl font-bold text-orange-400">✓</span>
+                  <span className="text-3xl font-bold text-gray-300">✓</span>
                 </motion.div>
                 <h4 className="text-2xl font-black mb-3 drop-shadow-lg">{cert.title}</h4>
                 <p className="text-gray-200 text-lg font-medium">{cert.description}</p>
@@ -218,7 +210,7 @@ export default function About() {
           </motion.p>
           <motion.a
             href="#contact"
-            className="group relative inline-block bg-gradient-to-r from-orange-500 to-teal-500 text-white px-12 py-6 rounded-2xl font-bold text-xl hover:shadow-2xl hover:shadow-orange-500/25 transition-all duration-500 transform hover:scale-110 hover:-translate-y-2"
+            className="group relative inline-block bg-gray-800 text-white px-12 py-6 rounded-2xl font-bold text-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-110 hover:-translate-y-2"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             initial={{ opacity: 0, scale: 0.9 }}
@@ -227,7 +219,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             <span className="relative z-10">Start Your Project</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-teal-600 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="absolute inset-0 bg-gray-700 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </motion.a>
         </motion.div>
       </div>

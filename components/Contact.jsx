@@ -1,12 +1,11 @@
 "use client";
 import { useRef, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 
 export default function Contact() {
   const form = useRef(null);
   const [status, setStatus] = useState("");
-  const [showModal, setShowModal] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -69,7 +68,7 @@ export default function Contact() {
             required
             className="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent"
           />
-          <button type="submit" className="bg-accent text-white py-3 rounded-md hover:bg-navy transition">
+          <button type="submit" className="bg-gray-800 text-white py-3 rounded-md hover:bg-gray-700 transition">
             {status === "sending" ? "Sending..." : "Send Message"}
           </button>
         </form>
@@ -82,63 +81,14 @@ export default function Contact() {
         )}
 
         <div className="mt-10 flex flex-col items-center">
-          <a href="#portfolio" className="block">
-            <img src="/qr.svg" alt="QR Code" className="w-28 mb-3" />
-          </a>
-          <p className="text-sm text-gray-600">Scan to view aerial portfolio</p>
+          <p className="text-sm text-gray-600">View our aerial portfolio above</p>
         </div>
 
-        <div className="mt-8">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            onClick={() => setShowModal(true)}
-            className="bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent transition"
-          >
-            Book Consultation
-          </motion.button>
-        </div>
 
         <footer className="mt-12 text-sm text-gray-500">
-          © 2025 Holt’s Drones | FAA Certified Aerial Services | Fresno, CA
+          © 2025 Holt's Drones | FAA Certified Aerial Services | Central Valley, CA
         </footer>
       </motion.div>
-
-      <AnimatePresence>
-        {showModal && (
-          <motion.div
-            className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <motion.div
-              className="bg-white rounded-xl shadow-xl p-8 w-[90%] max-w-md text-center"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
-              transition={{ duration: 0.3 }}
-            >
-              <h3 className="text-2xl font-bold mb-4">Book a Consultation</h3>
-              <p className="mb-6 text-gray-600">
-                Schedule a free consultation to discuss your aerial project.
-              </p>
-              <a
-                href="https://calendly.com/yourusername/consultation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-accent text-white px-5 py-3 rounded-md font-semibold hover:bg-navy transition"
-              >
-                Open Booking Calendar
-              </a>
-              <div className="mt-6">
-                <button onClick={() => setShowModal(false)} className="text-gray-500 hover:text-navy text-sm">
-                  Close
-                </button>
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </section>
   );
 }

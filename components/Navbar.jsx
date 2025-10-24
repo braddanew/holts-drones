@@ -15,9 +15,9 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <a href="#hero" className="font-bold text-navy">Holt’s Drones</a>
         <div className="flex items-center gap-6 text-sm">
-          <a href="#about" className="hover:text-accent">About</a>
-          <a href="#portfolio" className="hover:text-accent">Portfolio</a>
-          <a href="#contact" className="hover:text-accent">Contact</a>
+          <a href="#about" className="hover:text-gray-600">About</a>
+          <a href="#portfolio" className="hover:text-gray-600">Portfolio</a>
+          <a href="#contact" className="hover:text-gray-600">Contact</a>
         </div>
       </div>
     </nav>

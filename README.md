@@ -1,6 +1,6 @@
 # Holt's Drones Website
 
-A modern, responsive website for Holt's Drones - FAA Certified Aerial Services in Fresno, CA.
+A modern, responsive website for Holt's Drones - FAA Certified Aerial Services in Central Valley, CA.
 
 ## Features
 
@@ -91,7 +91,7 @@ Edit `tailwind.config.js` to customize the color scheme:
 For questions about this website template or Holt's Drones services, contact:
 - Phone: (559) 213-3403
 - Email: [Add your email here]
-- Location: Fresno, CA
+- Location: Central Valley, CA
 
 ---
 

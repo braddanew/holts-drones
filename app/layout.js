@@ -3,7 +3,7 @@ export const metadata = {
   description: "FAA Certified Aerial Services — See Your Property from a Higher Perspective.",
   keywords: [
     "drone photography",
-    "Fresno",
+    "Central Valley",
     "aerial inspection",
     "real estate drone",
     "FAA certified drone services"
@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
               url: "https://holts-drones.com",
               address: {
                 "@type": "PostalAddress",
-                addressLocality: "Fresno",
+                addressLocality: "Central Valley",
                 addressRegion: "CA",
                 addressCountry: "US"
               },
