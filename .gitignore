@@ -1,4 +1,8 @@
 node_modules
 .env.local
 .next
+ Ignore large original photo folders
+public/site-images/real-estate/
 
+public/site-images/Roof inspection/
+public/site-images/Construction/
