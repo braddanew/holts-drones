@@ -16,8 +16,11 @@ export default function Portfolio() {
   }, []);
 
   const openGallery = (project) => {
-    setSelectedProject(project);
-    setCurrentMediaIndex(0);
+    // Only open gallery if the project has media array (thermal imaging)
+    if (project.media && project.media.length > 1) {
+      setSelectedProject(project);
+      setCurrentMediaIndex(0);
+    }
   };
 
   const closeGallery = () => {
@@ -78,7 +81,7 @@ export default function Portfolio() {
               <span className="text-center">{p.title}</span>
               {p.media && p.media.length > 1 && (
                 <span className="text-sm mt-2 opacity-80">
-                  {p.media.length} media files
+                  {p.media.length} thermal images
                 </span>
               )}
             </div>
