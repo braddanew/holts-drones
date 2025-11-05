@@ -58,8 +58,9 @@ export default function Portfolio() {
           Explore a sample of our precision aerial imaging projects.
         </p>
       </div>
-
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 max-w-6xl mx-auto">
+      
+      {/* Commented out portfolio tiles grid */}
+      {/* <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 max-w-6xl mx-auto">
         {projects.map((p, i) => (
           <motion.div
             key={`${p.title}-${i}`}
@@ -87,8 +88,23 @@ export default function Portfolio() {
             </div>
           </motion.div>
         ))}
-      </div>
-
+      </div> */}
+      
+      {/* YouTube Video Embed */}
+      <div className="px-4 max-w-6xl mx-auto">
+        <div className="relative w-full overflow-hidden rounded-2xl shadow-xl mt-10">
+          <iframe
+            className="aspect-video w-full"
+            src="https://www.youtube-nocookie.com/embed/34jiufMnvBE?rel=0&modestbranding=1&playsinline=1"
+            title="Holt's Drones Portfolio"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
+        </div>
+      </div> 
+      
       {/* Gallery Modal */}
       <AnimatePresence>
         {selectedProject && (
@@ -198,7 +214,7 @@ export default function Portfolio() {
                     </div>
                   </div>
                 )}
-              </div>
+              </div> 
             </motion.div>
           </motion.div>
         )}

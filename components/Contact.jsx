@@ -1,36 +1,45 @@
 "use client";
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import emailjs from "emailjs-com";
 
 export default function Contact() {
   const form = useRef(null);
   const [status, setStatus] = useState("");
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
     setStatus("sending");
 
-    // TODO: Configure EmailJS with actual service credentials
-    // Replace these placeholders with your EmailJS service details
-    emailjs
-      .sendForm(
-        "service_holtsdrones", // Replace with your EmailJS service ID
-        "template_contact", // Replace with your EmailJS template ID
-        form.current,
-        "your_public_key_here" // Replace with your EmailJS public key
-      )
-      .then(() => {
-        // Send confirmation email to client
-        emailjs.sendForm(
-          "service_holtsdrones", // Replace with your EmailJS service ID
-          "template_confirmation", // Replace with your confirmation template ID
-          form.current,
-          "your_public_key_here" // Replace with your EmailJS public key
-        );
+    const fd = new FormData(form.current);
+    const payload = {
+      from_name: fd.get("from_name"),
+      from_email: fd.get("from_email"),
+      subject: fd.get("subject") || "",
+      message: fd.get("message"),
+      page_url: typeof window !== "undefined" ? window.location.href : "",
+      user_agent: typeof navigator !== "undefined" ? navigator.userAgent : "",
+    };
+
+    try {
+      const r = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const text = await r.text();
+      console.log("send-email status:", r.status, "body:", text);
+
+      if (r.ok) {
         setStatus("success");
-      })
-      .catch(() => setStatus("error"));
+        form.current?.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch (e) {
+      console.error("Send error:", e);
+      setStatus("error");
+    }
   };
 
   return (
@@ -55,7 +64,7 @@ export default function Contact() {
             className="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-accent"
           />
           <input
-            name="reply_to"
+            name="from_email"
             type="email"
             placeholder="Your Email"
             required

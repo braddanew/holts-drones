@@ -43,7 +43,7 @@ export default function About() {
 
   const certifications = [
     { title: "FAA Part 107 Certified", description: "Licensed commercial drone pilot" },
-    { title: "Insured & Bonded", description:  "$1 million liability coverage with more upon request" },
+    { title: "Insured", description:  "$1 million liability coverage with more upon request" },
     { title: "10+ Years Experience", description: "Extensive aerial photography expertise" }
   ];
 
