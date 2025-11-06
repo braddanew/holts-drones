@@ -21,7 +21,7 @@ export const metadata = {
 };
 
 import "./globals.css";
-import Chatbot from "../components/Chatbot";
+// import Chatbot from "../components/Chatbot";
 
 export default function RootLayout({ children }) {
   return (
@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         {children}
-        <Chatbot />
+        {/* <Chatbot /> */}
       </body>
     </html>
   );
