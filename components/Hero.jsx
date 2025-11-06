@@ -43,13 +43,13 @@ export default function Hero() {
       </motion.p>
 
       <motion.a
-        href="tel:+15592133404"
+        href="tel:+15592133403"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 4, duration: 1, ease: "easeOut" }}
         className="px-8 py-4 bg-gray-800 text-white rounded-full font-semibold hover:bg-gray-700 transition-colors text-lg drop-shadow-lg hover:scale-105 transform transition-transform"
       >
-        Call Now: (559) 213-3404
+        Call Now: (559) 213-3403
       </motion.a>
 
     </section>
