@@ -95,7 +95,7 @@ export default function Portfolio() {
         <div className="relative w-full overflow-hidden rounded-2xl shadow-xl mt-10">
           <iframe
             className="aspect-video w-full"
-            src="https://www.youtube-nocookie.com/embed/34jiufMnvBE?rel=0&modestbranding=1&playsinline=1"
+            src="https://www.youtube.com/embed/3ZszG_Pwuf4"
             title="Holt's Drones Portfolio"
             loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
